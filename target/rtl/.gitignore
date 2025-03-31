@@ -10,6 +10,6 @@
 /runs/
 
 # Auto-generated sources
-/src/
-/testharness.sv
+# /src/
+# /testharness.sv
 /*_group
