@@ -22,7 +22,7 @@ int main() {
     uint8_t *tcdm_80 = tcdm_baseaddress + 0x14000 * sizeof(uint8_t);
     uint8_t *tcdm_96 = tcdm_baseaddress + 0x18000 * sizeof(uint8_t);
     uint8_t *tcdm_112 = tcdm_baseaddress + 0x1c000 * sizeof(uint8_t);
-    uint8_t *tcdm_1   = tcdm_baseaddress + 0x100000* sizeof(uint8_t);
+    uint8_t *tcdm_1   = tcdm_baseaddress + 0x400000* sizeof(uint8_t);
     // Using xdma core only
     if (snrt_is_dm_core()) {
         // The xdma core is the last compute core in the cluster
@@ -30,7 +30,7 @@ int main() {
         // Test 1: Setting the 0-16KB region to 0xFF
         printf("Core %d is xdma core. \n", snrt_cluster_core_idx());
         printf("Test 1: Setting the 0-16KB region to 0xFF\n");
-        if (xdma_memcpy_1d(tcdm_0, tcdm_16, 0x4000 * sizeof(uint8_t)) != 0) {
+        if (xdma_memcpy_1d(tcdm_0, tcdm_0, 0x4000 * sizeof(uint8_t)) != 0) {
             printf("Error in xdma agu configuration\n");
             err++;
         } else {

@@ -32,13 +32,18 @@ RUNTIME_DIR = $(abspath $(HOST_DIR)/runtime)
 DEVICE_DIR  = $(abspath $(HOST_DIR)/../device)
 
 # now we only include the snax app
-DEVICE_APPS += snax/snax-gemmx-matmul
-DEVICE_APPS += snax/snax-gemmx-conv
 DEVICE_APPS += snax/snax-test-integration
 DEVICE_APPS += snax/snax-hypercorex-test-csr
 DEVICE_APPS += snax/snax-hypercorex-char-recog
 DEVICE_APPS += snax/snax-xdma-maxpool
 DEVICE_APPS += snax/snax-xdma-memset
+DEVICE_APPS += snax/snax-xdma-xcluster
+DEVICE_APPS += snax/snax-xdma-xcluster-nd
+DEVICE_APPS += snax/snax-xdma-xcluster-xacc
+DEVICE_APPS += snax/snax-xdma-xcluster-xacc-packed
+DEVICE_APPS += snax/snax-xdma-xcluster-xacc1
+DEVICE_APPS += snax/snax-xdma-xcluster-xacc2
+DEVICE_APPS += snax/snax-xdma-xcluster-xacc3
 DEVICE_APPS += snax/snax-axi-torture
 DEVICE_APPS += snax/snax-axi-torture-devil
 

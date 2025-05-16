@@ -1,0 +1,93 @@
+// systolic array: 4*4
+// DaVinci array: 4*4*4
+
+{
+    matrix_rows: 8,
+    matrix_cols: 4,
+
+    temp_dim_in: 6,  // matrix channels
+    temp_dim_out: 6, 
+
+    systolic_dim: 4,  // systolic array size
+
+    tempLoop0_in: 4,
+    tempLoop1_in: 2,
+    tempLoop2_in: 1,
+    tempLoop3_in: 1,
+    tempLoop4_in: 1,
+    tempLoop5_in: 1,
+
+    tempStride0_in: 264,
+    tempStride1_in: 32,
+    tempStride2_in: 0,
+    tempStride3_in: 0,
+    tempStride4_in: 0,
+    tempStride5_in: 0,
+
+    tempLoop0_out: 4,
+    tempLoop1_out: 2,
+    tempLoop2_out: 1,
+    tempLoop3_out: 1,
+    tempLoop4_out: 1,
+    tempLoop5_out: 1,
+
+    tempStride0_out: 8,
+    tempStride1_out: 256,
+    tempStride2_out: 0,
+    tempStride3_out: 0,
+    tempStride4_out: 0,
+    tempStride5_out: 0,
+
+    spatialStride_in: 256,
+    spatialStride_out: 32
+
+
+}
+
+
+// systolic array: 32*32
+// DaVinci array: 8*4*k
+
+{
+    matrix_rows: 64,
+    matrix_cols: 32,
+
+    temp_dim_in: 1,  // matrix channels
+    temp_dim_out: 1, 
+
+    systolic_dim: 32,  // systolic array size
+
+    tempLoop0_in: 8,
+    tempLoop1_in: 32,
+    tempLoop2_in: 1,
+    tempLoop3_in: 1,
+    tempLoop4_in: 1,
+    tempLoop5_in: 1,
+
+    tempStride0_in: 2048,
+    tempStride1_in: 264,
+    tempStride2_in: 0,
+    tempStride3_in: 0,
+    tempStride4_in: 0,
+    tempStride5_in: 0,
+
+    tempLoop0_out: 8,
+    tempLoop1_out: 8,
+    tempLoop2_out: 4,
+    tempLoop3_out: 1,
+    tempLoop4_out: 1,
+    tempLoop5_out: 1,
+
+    tempStride0_out: 512,
+    tempStride1_out: 8,
+    tempStride2_out: 4096,
+    tempStride3_out: 0,
+    tempStride4_out: 0,
+    tempStride5_out: 0,
+
+    spatialStride_in: 256,
+    spatialStride_out: 64
+
+
+}
+

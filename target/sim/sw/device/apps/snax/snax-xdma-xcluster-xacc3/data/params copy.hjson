@@ -1,0 +1,167 @@
+// 1st stage 3D tensor core: 8*8*8
+// 2nd stage SIMD
+
+{
+    matrix_rows: 256,
+    matrix_cols: 256,  
+
+
+    tempLoop0_in: 4,
+    tempLoop1_in: 8,
+    tempLoop2_in: 32,
+    tempLoop3_in: 1,
+    tempLoop4_in: 1,
+    tempLoop5_in: 1,
+
+    tempStride0_in: 512,
+    tempStride1_in: 8,
+    tempStride2_in: 2048,
+    tempStride3_in: 0,
+    tempStride4_in: 0,
+    tempStride5_in: 0,
+
+    tempLoop0_out: 1024,
+    tempLoop1_out: 1,
+    tempLoop2_out: 1,
+    tempLoop3_out: 1,
+    tempLoop4_out: 1,
+    tempLoop5_out: 1,
+
+    tempStride0_out: 64,
+    tempStride1_out: 0,
+    tempStride2_out: 0,
+    tempStride3_out: 0,
+    tempStride4_out: 0,
+    tempStride5_out: 0,
+
+    spatialStride_in: 64,
+    spatialStride_out: 8
+
+
+}
+
+// 1st stage 3D tensor core: 8*4*8
+// 2nd stage SIMD
+
+{
+    matrix_rows: 256,
+    matrix_cols: 256,  
+
+
+    tempLoop0_in: 4,
+    tempLoop1_in: 4,
+    tempLoop2_in: 64,
+    tempLoop3_in: 1,
+    tempLoop4_in: 1,
+    tempLoop5_in: 1,
+
+    tempStride0_in: 256,
+    tempStride1_in: 8,
+    tempStride2_in: 1024,
+    tempStride3_in: 0,
+    tempStride4_in: 0,
+    tempStride5_in: 0,
+
+    tempLoop0_out: 1024,
+    tempLoop1_out: 1,
+    tempLoop2_out: 1,
+    tempLoop3_out: 1,
+    tempLoop4_out: 1,
+    tempLoop5_out: 1,
+
+    tempStride0_out: 64,
+    tempStride1_out: 0,
+    tempStride2_out: 0,
+    tempStride3_out: 0,
+    tempStride4_out: 0,
+    tempStride5_out: 0,
+
+    spatialStride_in: 32,
+    spatialStride_out: 8
+
+
+}
+
+// 1st stage 3D tensor core: 8*4*8
+// 2nd stage SIMD
+
+{
+    matrix_rows: 256,
+    matrix_cols: 128,  
+
+
+    tempLoop0_in: 2,
+    tempLoop1_in: 4,
+    tempLoop2_in: 64,
+    tempLoop3_in: 1,
+    tempLoop4_in: 1,
+    tempLoop5_in: 1,
+
+    tempStride0_in: 256,
+    tempStride1_in: 8,
+    tempStride2_in: 512,
+    tempStride3_in: 0,
+    tempStride4_in: 0,
+    tempStride5_in: 0,
+
+    tempLoop0_out: 512,
+    tempLoop1_out: 1,
+    tempLoop2_out: 1,
+    tempLoop3_out: 1,
+    tempLoop4_out: 1,
+    tempLoop5_out: 1,
+
+    tempStride0_out: 64,
+    tempStride1_out: 0,
+    tempStride2_out: 0,
+    tempStride3_out: 0,
+    tempStride4_out: 0,
+    tempStride5_out: 0,
+
+    spatialStride_in: 32,
+    spatialStride_out: 8
+
+
+}
+
+// 1st stage 3D tensor core: 8*4*8
+// 2nd stage SIMD
+
+{
+    matrix_rows: 128,
+    matrix_cols: 128,  
+
+
+    tempLoop0_in: 2,
+    tempLoop1_in: 4,
+    tempLoop2_in: 32,
+    tempLoop3_in: 1,
+    tempLoop4_in: 1,
+    tempLoop5_in: 1,
+
+    tempStride0_in: 256,
+    tempStride1_in: 8,
+    tempStride2_in: 512,
+    tempStride3_in: 0,
+    tempStride4_in: 0,
+    tempStride5_in: 0,
+
+    tempLoop0_out: 256,
+    tempLoop1_out: 1,
+    tempLoop2_out: 1,
+    tempLoop3_out: 1,
+    tempLoop4_out: 1,
+    tempLoop5_out: 1,
+
+    tempStride0_out: 64,
+    tempStride1_out: 0,
+    tempStride2_out: 0,
+    tempStride3_out: 0,
+    tempStride4_out: 0,
+    tempStride5_out: 0,
+
+    spatialStride_in: 32,
+    spatialStride_out: 8
+
+
+}

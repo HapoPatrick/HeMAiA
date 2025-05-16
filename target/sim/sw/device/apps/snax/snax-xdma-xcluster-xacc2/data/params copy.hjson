@@ -1,0 +1,128 @@
+// 1st stage tiled systolic array MAC: 32*32
+// 2nd stage 3D tensor core: 8*8*8
+
+{
+    matrix_rows: 256,
+    matrix_cols: 256,  // 32
+
+    systolic_dim: 32,  // systolic array size
+
+    tempLoop0_in: 4,
+    tempLoop1_in: 32,
+    tempLoop2_in: 8,
+    tempLoop3_in: 1,
+    tempLoop4_in: 1,
+    tempLoop5_in: 1,
+
+    tempStride0_in: 40,
+    tempStride1_in: 256,
+    tempStride2_in: 8448,  // 33*256
+    tempStride3_in: 0,
+    tempStride4_in: 0,
+    tempStride5_in: 0,
+
+    tempLoop0_out: 4,
+    tempLoop1_out: 32,
+    tempLoop2_out: 8,
+    tempLoop3_out: 1,
+    tempLoop4_out: 1,
+    tempLoop5_out: 1,
+
+    tempStride0_out: 64,
+    tempStride1_out: 2048,
+    tempStride2_out: 256,
+    tempStride3_out: 0,
+    tempStride4_out: 0,
+    tempStride5_out: 0,
+
+    spatialStride_in: 32,
+    spatialStride_out: 8
+
+
+}
+
+// 1st stage tiled systolic array MAC: 32*32
+// 2nd stage 3D tensor core: 8*8*8
+
+{
+    matrix_rows: 256,
+    matrix_cols: 128,  // 32
+
+    systolic_dim: 32,  // systolic array size
+
+    tempLoop0_in: 4,
+    tempLoop1_in: 32,
+    tempLoop2_in: 4,
+    tempLoop3_in: 1,
+    tempLoop4_in: 1,
+    tempLoop5_in: 1,
+
+    tempStride0_in: 40,
+    tempStride1_in: 256,
+    tempStride2_in: 8448,  // 33*256 
+    tempStride3_in: 0,
+    tempStride4_in: 0,
+    tempStride5_in: 0,
+
+    tempLoop0_out: 4,
+    tempLoop1_out: 32,
+    tempLoop2_out: 4,
+    tempLoop3_out: 1,
+    tempLoop4_out: 1,
+    tempLoop5_out: 1,
+
+    tempStride0_out: 64,
+    tempStride1_out: 1024,
+    tempStride2_out: 256,
+    tempStride3_out: 0,
+    tempStride4_out: 0,
+    tempStride5_out: 0,
+
+    spatialStride_in: 32,
+    spatialStride_out: 8
+
+
+}
+
+// 1st stage tiled systolic array MAC: 32*32
+// 2nd stage 3D tensor core: 8*8*8
+
+{
+    matrix_rows: 128,
+    matrix_cols: 128,  // 32
+
+    systolic_dim: 32,  // systolic array size
+
+    tempLoop0_in: 4,
+    tempLoop1_in: 16,
+    tempLoop2_in: 4,
+    tempLoop3_in: 1,
+    tempLoop4_in: 1,
+    tempLoop5_in: 1,
+
+    tempStride0_in: 40,
+    tempStride1_in: 256,
+    tempStride2_in: 4352,  // 17*256 
+    tempStride3_in: 0,
+    tempStride4_in: 0,
+    tempStride5_in: 0,
+
+    tempLoop0_out: 4,
+    tempLoop1_out: 16,
+    tempLoop2_out: 4,
+    tempLoop3_out: 1,
+    tempLoop4_out: 1,
+    tempLoop5_out: 1,
+
+    tempStride0_out: 64,
+    tempStride1_out: 1024,
+    tempStride2_out: 256,
+    tempStride3_out: 0,
+    tempStride4_out: 0,
+    tempStride5_out: 0,
+
+    spatialStride_in: 32,
+    spatialStride_out: 8
+
+
+}

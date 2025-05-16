@@ -1,0 +1,44 @@
+// 1st stage MAC: 8*16*16 (b2=8)
+// 2nd stage MAC: 16*16*16 (b2=16)
+
+{
+    matrix_rows: 256,
+    matrix_cols: 256,
+
+    K: 16,  
+    B: 32, 
+
+
+    tempLoop0_in: 2,
+    tempLoop1_in: 2,
+    tempLoop2_in: 16,
+    tempLoop3_in: 16,
+    tempLoop4_in: 1,
+    tempLoop5_in: 1,
+
+    tempStride0_in: 64,
+    tempStride1_in: 2048,
+    tempStride2_in: 128,
+    tempStride3_in: 4096,
+    tempStride4_in: 0,
+    tempStride5_in: 0,
+
+    tempLoop0_out: 4,
+    tempLoop1_out: 256,
+    tempLoop2_out: 1,
+    tempLoop3_out: 1,
+    tempLoop4_out: 1,
+    tempLoop5_out: 1,
+
+    tempStride0_out: 64,
+    tempStride1_out: 256,
+    tempStride2_out: 0,
+    tempStride3_out: 0,
+    tempStride4_out: 0,
+    tempStride5_out: 0,
+
+    spatialStride_in: 8,
+    spatialStride_out: 8
+
+
+}
